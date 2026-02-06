@@ -16,5 +16,4 @@ class Cafe:
             raise OutdatedVaccineError("All friends should be vaccinated")
         elif not visitor.__getitem__("wearing_a_mask"):
             raise NotWearingMaskError("All should be with masks")
-        else:
-            return f"Welcome to {self.name}"
+        return f"Welcome to {self.name}"
